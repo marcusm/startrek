@@ -2,10 +2,15 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/marcusm/startrek-go/internal"
 )
 
 func main() {
-	ship := Klingon{Energy: 200, X: 1, Y: 1}
+	k := internal.Klingon{}
+	k.Energy = 200
+	k.X = 1
+	k.Y = 1
 
-	fmt.Println(ship)
+	fmt.Println(k)
 }
